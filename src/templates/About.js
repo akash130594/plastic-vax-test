@@ -1,12 +1,13 @@
 import { graphql } from 'gatsby'
 import loadable from '@loadable/component'
 import React from 'react'
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 import Header from '../components/about/Header'
 import JoinUs from '../components/about/JoinUs'
 import OurTeam from '../components/about/OurTeam'
 import Story from '../components/about/Story'
 
+const Layout = loadable(() => import('../components/Layout'))
 // const Header = loadable(() => import('../components/about/Header'))
 // const JoinUs = loadable(() => import('../components/about/JoinUs'))
 // const OurTeam = loadable(() => import('../components/about/OurTeam'))
