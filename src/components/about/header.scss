@@ -1,0 +1,138 @@
+.header-section {
+  background: $black;
+  padding-top: unit(64px);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 999;
+
+  .title-container {
+    margin-top: unit(32px);
+    padding: 0 unit(16px);
+  }
+
+  .img-main-container {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    .img-container {
+      .culture-img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+
+  .background-text {
+    position: absolute;
+    top: 73%;
+    left: -6%;
+    right: -24%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
+  .scroll-text {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    font-size: unit(12px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-left: 2px solid $white;
+    padding-left: unit(8px);
+    height: unit(80px);
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $min-width-576) {
+  .header-section {
+    .img-main-container {
+      width: 45%;
+    }
+
+    .background-text {
+      top: 65%;
+    }
+  }
+}
+
+@media (min-width: $min-width-768) {
+  .header-section {
+    .img-main-container {
+      width: 38%;
+    }
+  }
+}
+
+@media (min-width: $min-width-992) {
+  .header-section {
+    padding-top: 0;
+
+    .title-container {
+      margin-top: 0;
+      padding: 0;
+      width: 40%;
+    }
+
+    .img-main-container {
+      width: 38%;
+      right: 5%;
+      .img-container {
+        width: 70%;
+      }
+
+      .img-dec {
+        width: 30%;
+        padding-bottom: unit(50px);
+        p {
+          &:first-child {
+            font-size: unit(22px);
+            font-weight: 500;
+          }
+          &:last-child {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .background-text {
+      width: 60%;
+      position: relative;
+      top: 40px;
+      left: auto;
+      right: auto;
+      transform: translateY(0);
+    }
+
+    .scroll-text {
+      left: auto;
+      bottom: 5%;
+      height: unit(100px);
+    }
+  }
+}
+
+@media (min-width: $min-width-1200) {
+  .header-section {
+
+    .img-main-container {
+      width: 45%;
+      right: 5%;
+    }
+  }
+}
+
+@media (min-width: $min-width-1400) {
+  .header-section {
+    .img-main-container {
+      width: 35%;
+      right: 15%;
+    }
+  }
+}

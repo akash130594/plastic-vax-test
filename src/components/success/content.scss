@@ -1,0 +1,77 @@
+.success-container {
+  background: $orange;
+  padding: 0 unit(16px);
+  height: 100vh;
+  .content-container {
+    font-family: 'Montserrat', sans-serif;
+    .hey-you {
+      margin-top: unit(32px);
+      font-weight: 900;
+      color: $black;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: unit(60px);
+      font-family: 'Big Shoulders Text', cursive;
+    }
+
+    .dec {
+      font-weight: 400;
+      margin: unit(16px) 0 unit(32px);
+    }
+
+    .home-link {
+      color: $white;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width:$min-width-576) {
+  .success-container  {
+    .content-container  {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width:$min-width-768) {
+  .success-container  {
+    .content-container  {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width:$min-width-992) {
+  .success-container  {
+    .content-container  {
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width:$min-width-1200) {
+  .success-container  {
+    .content-container  {
+      width: 30%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width:$min-width-1400) {
+  .success-container  {
+    .content-container  {
+      width: 20%;
+      margin: 0 auto;
+    }
+  }
+}

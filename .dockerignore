@@ -1,0 +1,8 @@
+README.md
+Dockerfile
+Jenkinsfile
+.git/
+.cache/
+public/
+node_modules/
+plasticwax.sifars.com/

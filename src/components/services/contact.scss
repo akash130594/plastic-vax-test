@@ -1,0 +1,92 @@
+.contact-us-container {
+  background: $orange;
+  padding: unit(32px) unit(16px) unit(96px);
+
+  .contact-us-content {
+    background: $black;
+    padding: unit(32px) unit(16px) unit(220px);
+    position: relative;
+    .img-container {
+      position: absolute;
+      bottom: -25px;
+      right: -16px;
+      left: 0;
+      .get-in-touch-img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width-576) {
+  .contact-us-container {
+    .contact-us-content {
+      padding: unit(32px) unit(16px) unit(350px);
+    }
+  }
+}
+
+@media (min-width: $min-width-768) {
+  .contact-us-container {
+    .contact-us-content {
+      padding: unit(32px) unit(16px) unit(500px);
+    }
+  }
+}
+
+@media (min-width: $min-width-992) {
+  .contact-us-container {
+    padding: 0 unit(16px) unit(96px);
+
+    .contact-us-content {
+      padding: unit(32px);
+      .img-container {
+        bottom: -50px;
+        right: -14%;
+        left: auto;
+        width: 100%;
+      }
+
+      .title-container {
+        width: 50%;
+
+        .project-btn {
+          margin-top: unit(32px);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width-1200) {
+  .contact-us-container {
+    .contact-us-content {
+      .img-container {
+        right: -10%;
+        width: 60%;
+      }
+
+      .title-container {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width-1400) {
+  .contact-us-container {
+    padding-bottom: unit(196px);
+
+    .contact-us-content {
+      .img-container {
+        width: 45%;
+      }
+
+      .title-container {
+        width: 50%;
+      }
+    }
+  }
+}

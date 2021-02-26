@@ -1,0 +1,44 @@
+.news-page {
+  background: $black;
+  padding: unit(64px) unit(16px);
+
+  .title-container {
+    position: relative;
+    padding-left: unit(45px);
+    margin-bottom: unit(32px);
+
+    h3 {
+      color: $gray;
+    }
+  }
+
+  .title-dec,
+  .sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: unit(16px);
+  }
+
+  .sub-title {
+    font-weight: 700;
+    margin-bottom: unit(32px);
+  }
+}
+
+@media (min-width: $min-width-992) {
+  .news-page {
+
+    .title-container {
+      padding-left: 0;
+      margin-bottom: unit(32px);
+    }
+
+    .sub-title {
+      margin-bottom: unit(64px);
+    }
+
+    .title-dec {
+      width: 40%;
+    }
+  }
+}

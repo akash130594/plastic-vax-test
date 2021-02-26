@@ -1,0 +1,37 @@
+.team-section {
+  background: $gray;
+  padding: unit(64px) unit(32px);
+
+  .team-dec-container {
+    width: 80%;
+    margin: unit(32px) auto 0;
+
+    > div {
+      margin-bottom: unit(16px);
+      p {
+        text-align: left;
+        width: 50%;
+
+        &:first-child {
+          font-size: unit(22px);
+          font-weight: 700;
+        }
+
+        &:last-child {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width-992) {
+  .team-section {
+
+    .team-dec-container {
+      width: 50%;
+      margin: unit(32px) 0 0;
+    }
+  }
+}

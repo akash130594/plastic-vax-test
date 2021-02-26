@@ -1,0 +1,23 @@
+.filter-btn-container {
+  margin-bottom: unit(32px);
+  
+  .filter-btn {
+    background: $gray;
+     font-family: 'Big Shoulders Text', cursive;
+    font-weight: 500;
+    font-size: unit(16px);
+    border: 0;
+    box-shadow: 0;
+    color: $white;
+    border-bottom: 2px solid transparent;
+    padding: unit(16px) 0;
+    flex-basis: 200px;
+    max-width: 200px;
+
+    text-align: center;
+
+    &.active {
+      border-color: $orange;
+    }
+  }
+}

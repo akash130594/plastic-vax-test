@@ -1,0 +1,15 @@
+.filter-btn-container {
+  .filter-btn {
+    width: 33.33%;
+    padding: unit(16px) 0;
+    text-align: center;
+    background: $orange;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+
+    &:hover,&.active  {
+      border-color: $white;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.pagination-section {
+  background: linear-gradient($black 40%, $gray);
+  padding: unit(64px) unit(16px);
+  .pagination-container {
+    .pagination-link {
+      text-decoration: none;
+      color: $white;
+      display: block;
+      width: 48%;
+      .pagination-button {
+        margin-bottom: unit(16px);
+
+        p {
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+
+      .pagination-img-container {
+        height: 150px;
+        position: relative;
+        .pagination-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+        p {
+          position: absolute;
+          left: 16px;
+          bottom: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: $min-width-1200) {
+  .pagination-section {
+    .pagination-container {
+      .pagination-link {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width-1400) {
+  .pagination-section {
+    padding-top: unit(128px);
+    padding-bottom: unit(128px);
+    .pagination-container {
+      .pagination-link {
+        width: 30%;
+
+        .pagination-img-container {
+          height: 200px;
+        }
+      }
+    }
+  }
+}

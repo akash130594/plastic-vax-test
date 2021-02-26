@@ -1,0 +1,31 @@
+.role-section {
+  background: $gray;
+  padding: unit(64px) unit(16px);
+  .first-column {
+    p {
+      font-size: unit(22px);
+    }
+  }
+
+  .second-column {
+    margin-top: unit(64px);
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+      margin-top: unit(16px);
+    }
+  }
+}
+
+@media (min-width: $min-width-992) {
+  .role-section {
+    .first-column {
+      width: 48%;
+    }
+
+    .second-column {
+      width: 48%;
+      margin-top: 0;
+    }
+  }
+}

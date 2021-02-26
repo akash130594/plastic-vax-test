@@ -1,0 +1,82 @@
+.photo-real-container {
+  background: $orange;
+  padding: unit(64px) unit(16px);
+
+  .img-container {
+    .women-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .move-img-container {
+      position: relative;
+      top: unit(-20px);
+      .move-img {
+        width: unit(25px);
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      p {
+        margin-top: unit(16px);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: unit(12px);
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width-992) {
+  .photo-real-container {
+    padding: unit(64px) 0;
+    position: relative;
+    z-index: 999;
+
+    .title-container {
+      width: 45%;
+      margin-right: 5%;
+    }
+
+    .img-container {
+      width: 50%;
+    }
+
+    .red-angle-container {
+      z-index: -1;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+
+      .menu-angle {
+        width: 100%;
+        height: auto;
+        display: block;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width-1200) {
+  .photo-real-container {
+    padding-top: unit(96px);
+    padding-bottom: unit(96px);
+
+    .red-angle-container {
+      width: 40%;
+    }
+  }
+}
+
+@media (min-width: $min-width-1400) {
+  .photo-real-container {
+    .red-angle-container {
+      width: 30%;
+    }
+  }
+}

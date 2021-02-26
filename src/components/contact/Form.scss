@@ -1,0 +1,34 @@
+.form-container {
+  margin-top: unit(32px);
+  .input-container {
+    margin-bottom: unit(32px);
+    .input-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: unit(16px);
+    }
+    .input-field {
+      font-family: 'Montserrat', sans-serif;
+      font-size: unit(16px);
+      font-weight: 500;
+      color: #9c9c9c;
+      background: $gray;
+      border: 0;
+      width: 100%;
+      box-shadow: none;
+      outline: 0;
+      padding: unit(16px) unit(8px);
+    }
+
+    .error-message {
+      margin-top: unit(16px);
+      color: $orange;
+    }
+  }
+
+  .project-btn {
+    width: 100%;
+    margin-top: unit(32px);
+  }
+}

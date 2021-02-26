@@ -1,0 +1,38 @@
+.career-container {
+  padding: unit(96px) unit(16px);
+  background-position: top left 33%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  .culture-text-container {
+    .culture-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $min-width-992) {
+  .career-container {
+    padding: unit(96px) 0;
+    overflow: hidden;
+
+    .title-container {
+      width: 40%;
+    }
+
+    .culture-text-container {
+      position: relative;
+      width: 60%;
+      right: -12%;
+    }
+  }
+}
+
+@media (min-width: $min-width-1400) {
+  .career-container {
+    padding-top: unit(148px);
+  }
+}

@@ -1,0 +1,68 @@
+.form-main-container {
+  background: $black;
+  padding: 0 unit(16px);
+
+  .content-form-container {
+    .input-container {
+      margin-bottom: unit(32px);
+      .input-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: unit(16px);
+
+        .label-star {
+          color: $orange;
+        }
+      }
+      .input-field {
+        font-family: 'Montserrat', sans-serif;
+        font-size: unit(16px);
+        font-weight: 500;
+        color: #9c9c9c;
+        background: $gray;
+        border: 0;
+        width: 100%;
+        box-shadow: none;
+        outline: 0;
+        padding: unit(16px) unit(8px);
+      }
+
+      .error-message {
+        margin-top: unit(16px);
+        color: $orange;
+      }
+    }
+
+    .additional-text {
+      font-size: unit(22px);
+      font-weight: 500;
+      padding: unit(32px) 0;
+    }
+
+    .project-btn {
+      width: 100%;
+      margin-top: unit(32px);
+    }
+  }
+}
+
+@media (min-width: $min-width-992) {
+  .form-main-container {
+    padding: unit(96px) 0 unit(64px) 0;
+    .content-form-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+@media (min-width: $min-width-1200) {
+  .form-main-container {
+    padding: unit(224px) 0 unit(96px) 0;
+    .content-form-container {
+      width: 60%;
+    }
+  }
+}

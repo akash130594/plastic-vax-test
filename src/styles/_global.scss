@@ -1,0 +1,173 @@
+@function unit($pixels, $context: 16px) {
+  @return ($pixels / $context) * 1rem;
+}
+
+
+/*  ========== color variables ==========*/
+
+$orange: #FE0000;
+$black: #101010;
+$gray: #222222;
+$white: #ffffff;
+
+/*  ========== media break points ==========*/
+
+$min-width-576: 576px;
+$min-width-768: 768px;
+$min-width-992: 992px;
+$min-width-1200: 1200px;
+$min-width-1400: 1400px;
+$min-width-1600: 1600px;
+$min-width-1800: 1800px;
+
+body {
+  color: $white;
+  font-family: 'Big Shoulders Text', cursive;
+  font-weight: 100;
+  font-size: unit(16px);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.project-btn {
+  font-size: unit(18px);
+  display: inline-block;
+  text-transform: uppercase;
+  font: inherit;
+  background: transparent;
+  box-shadow: none;
+  box-shadow: 0;
+  color: $white;
+  font-weight: 600;
+  border: 2px solid $white;
+  padding: unit(8px) unit(32px);
+  
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3 {
+  // font-size: unit(72px);
+  font-size: unit(50px);
+  font-weight: 900;
+  margin: 0;
+  line-height: 1;
+}
+
+h2 {
+  // font-size: unit(60px);
+  font-size: unit(40px);
+}
+
+h3 {
+  // font-size: unit(80px);
+  font-size: unit(60px);
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.vertical-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 18px;
+  font: inherit;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  height: 79%;
+  width: auto;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.title-container {
+  .sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: unit(16px);
+    text-transform: uppercase;
+  }
+
+  .title-dec {
+    margin: unit(16px) 0 unit(32px) 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: $min-width-1200) {
+  h1 {
+    font-size: unit(120px);
+  }
+
+  h3 {
+    font-size: unit(160px);
+  }
+}
+
+
+// base left/right gap of all pages
+
+
+@media (min-width: $min-width-992) {
+  $base-gap: 15%;
+   #common-px  {
+    padding-right: $base-gap;
+    padding-left: $base-gap;
+  }
+
+  #common-pl  {
+    padding-left: $base-gap;
+  }
+}
+
+@media (min-width: $min-width-1200) {
+  $base-gap: 16%;
+
+  #common-px  {
+    padding-right: $base-gap;
+    padding-left: $base-gap;
+  }
+
+  #common-pl  {
+    padding-left: $base-gap;
+  }
+}
+
+@media (min-width: $min-width-1400) {
+  $base-gap: 18%;
+
+  #common-px  {
+    padding-right: $base-gap;
+    padding-left: $base-gap;
+  }
+
+  #common-pl  {
+    padding-left: $base-gap;
+  }
+}
+
+@media (min-width: $min-width-1600) {
+  $base-gap: 23%;
+
+  #common-px  {
+    padding-right: $base-gap;
+    padding-left: $base-gap;
+  }
+
+  #common-pl  {
+    padding-left: $base-gap;
+  }
+}

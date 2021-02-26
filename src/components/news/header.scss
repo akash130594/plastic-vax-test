@@ -1,0 +1,38 @@
+.single-news-container {
+  background: $black;
+  padding-top: unit(64px);
+
+  .title-container {
+    margin-top: unit(32px);
+    padding: 0 unit(16px);
+  }
+
+  .img-container {
+    .header-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $min-width-992) {
+  .single-news-container {
+    padding-top: 0;
+    height: 100vh;
+
+    .title-container {
+      width: 40%;
+      margin-top: 0;
+      padding: 0;
+    }
+
+    .img-container {
+      width: 60%;
+      .header-img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

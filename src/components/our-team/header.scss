@@ -1,0 +1,208 @@
+.team-header-section {
+  background: $black;
+  padding-top: unit(32px);
+  position: relative;
+  min-height: 100vh;
+  z-index: 999;
+  overflow: hidden;
+
+  .img-parent-container {
+    .about-us-img {
+      width: 80%;
+      height: 200px;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  .about-project-btn-container {
+    .about-project-btn {
+      display: block;
+      width: 100%;
+      padding: unit(10px) 0;
+      background: $white;
+      border: 0;
+      font-size: unit(18px);
+      font-weight: 700;
+      text-transform: uppercase;
+
+      .angle {
+        margin: 0 0 2px 10px;
+        width: 11px;
+      }
+    }
+  }
+
+  .header-content {
+    padding: unit(32px) unit(16px);
+
+    .img-content {
+      margin-bottom: 250px;
+      position: relative;
+      .number-container {
+        position: relative;
+        top: 25px;
+
+        .vertical-text {
+          margin-left: 80%;
+        }
+      }
+      .img-container {
+        .img-parent-container {
+          width: 100%;
+          position: relative;
+          .about-us-img {
+            &:nth-child(2) {
+              position: absolute;
+              right: 0;
+              top: 90%;
+              width: 70%;
+              height: 250px;
+            }
+          }
+        }
+      }
+
+      .btn-container {
+        position: relative;
+        .about-project-btn-container {
+          width: 30%;
+          position: absolute;
+          right: 70%;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .bg-text-container {
+    position: absolute;
+    left: -6%;
+    bottom: 84px;
+    z-index: -1;
+    width: 73%;
+  }
+}
+
+@media (min-width: $min-width-576) {
+  .team-header-section {
+    .img-parent-container {
+      .about-us-img {
+        height: 250px;
+      }
+    }
+
+    .header-content {
+      .img-content {
+        margin-bottom: 300px;
+        .img-container {
+          .img-parent-container {
+            .about-us-img {
+              &:nth-child(2) {
+                height: 300px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $min-width-768) {
+  .team-header-section {
+    .img-parent-container {
+      .about-us-img {
+        height: 300px;
+      }
+    }
+
+    .header-content {
+      .img-content {
+        margin-bottom: 350px;
+        .img-container {
+          .img-parent-container {
+            .about-us-img {
+              &:nth-child(2) {
+                height: 350px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bg-text-container {
+      bottom: 95px;
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: $min-width-992) {
+  .team-header-section {
+    .header-content {
+      padding: unit(64px) 0;
+
+      .title-container {
+        width: 40%;
+      }
+
+      .img-content {
+        width: 60%;
+      }
+    }
+
+    .bg-text-container {
+      bottom: 28%;
+      width: 45%;
+      left: 4%;
+    }
+  }
+}
+
+@media (min-width: $min-width-1200) {
+  .team-header-section {
+    .img-parent-container {
+      .about-us-img {
+        width: 85%;
+        height: 450px;
+      }
+    }
+
+    .header-content {
+      .title-container {
+        .title-dec {
+          width: 90%;
+        }
+      }
+
+      .img-content {
+        .number-container {
+          .vertical-text {
+            margin-left: 85%;
+          }
+        }
+        .img-container {
+          .img-parent-container {
+            .about-us-img {
+              &:nth-child(2) {
+                width: 60%;
+              }
+            }
+          }
+        }
+
+        .btn-container {
+          .about-project-btn-container {
+            right: 60%;
+          }
+        }
+      }
+    }
+
+    .bg-text-container {
+      width: 40%;
+    }
+  }
+}
